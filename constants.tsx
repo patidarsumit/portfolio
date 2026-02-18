@@ -16,8 +16,8 @@ export const PERSONAL_INFO = {
   email: 'patidars110@gmail.com',
   linkedin: 'https://linkedin.com/in/sumit-patidar-774ba4152/',
   github: 'https://github.com/patidarsumit',
-  resumeUrl: '/sumit-resume.pdf',
-  portraitUrl: '/sumit-patidar.jpg',
+  resumeUrl: '/portfolio/sumit-resume.pdf',
+  portraitUrl: '/portfolio/sumit-patidar.jpg',
   contact: '7223893390',
   location: 'Remote / Global',
 };
