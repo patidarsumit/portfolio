@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { Send, Mail, MapPin, Phone } from 'lucide-react';
 import { PERSONAL_INFO } from '../constants';
 
@@ -111,7 +111,7 @@ const Contact: React.FC = () => {
                   value={formData.message}
                   onChange={e => setFormData({ ...formData, message: e.target.value })}
                   className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-primary-500 transition-colors resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder="Write your message here..."
                 />
               </div>
 
