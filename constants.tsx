@@ -10,8 +10,13 @@ import {
 export const PERSONAL_INFO = {
   name: 'Sumit Patidar',
   title: 'Senior UI Engineer',
-  summary:
-    'Senior UI Engineer with 6.5+ years of experience delivering scalable enterprise web applications using Angular. Led frontend architecture initiatives that improved application performance by up to 30% and reduced regression defects through strong automation practices. Experienced in Agile development, cross-functional team collaboration, code reviews, and CI/CD implementation. Specialized in reusable component architecture, frontend performance optimization, and enterprise UI modernization.',
+  summary: `With 6.5+ years of experience building scalable enterprise web applications using Angular, React, and modern frontend technologies.
+
+Expertise in designing reusable component architectures, optimizing frontend performance, and modernizing enterprise user interfaces.
+
+Strong experience working in Agile environments, collaborating with cross-functional teams, and contributing through code reviews, testing, and CI/CD practices.
+
+Proven ability to deliver high-quality, maintainable UI solutions while reducing regression issues through automation and strong engineering best practices.`,
   yearsOfExperience: 6.5,
   email: 'patidars110@gmail.com',
   linkedin: 'https://linkedin.com/in/sumit-patidar-774ba4152/',
@@ -48,37 +53,147 @@ export const EDUCATION: Education[] = [
 
 export const CORE_TECH: Technology[] = [
   // Frontend
-  { name: 'Angular', slug: 'angular', category: 'frontend', expertise: 'Expert Level' },
+  {
+    name: 'Angular',
+    slug: 'angular',
+    category: 'frontend',
+    expertise: 'Expert Level',
+  },
   { name: 'React', slug: 'react', category: 'frontend', expertise: 'Advanced' },
-  { name: 'Next.js', slug: 'nextjs', category: 'frontend', expertise: 'Advanced' },
-  { name: 'TypeScript', slug: 'typescript', category: 'frontend', expertise: 'Expert Level' },
-  { name: 'JavaScript ES6+', slug: 'js', category: 'frontend', expertise: 'Expert Level' },
-  { name: 'HTML5', slug: 'html', category: 'frontend', expertise: 'Expert Level' },
-  { name: 'CSS3', slug: 'css', category: 'frontend', expertise: 'Expert Level' },
-  { name: 'Tailwind CSS', slug: 'tailwind', category: 'frontend', expertise: 'Advanced' },
+  {
+    name: 'Next.js',
+    slug: 'nextjs',
+    category: 'frontend',
+    expertise: 'Advanced',
+  },
+  {
+    name: 'TypeScript',
+    slug: 'typescript',
+    category: 'frontend',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'JavaScript ES6+',
+    slug: 'js',
+    category: 'frontend',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'HTML5',
+    slug: 'html',
+    category: 'frontend',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'CSS3',
+    slug: 'css',
+    category: 'frontend',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'Tailwind CSS',
+    slug: 'tailwind',
+    category: 'frontend',
+    expertise: 'Advanced',
+  },
   { name: 'SCSS', slug: 'sass', category: 'frontend', expertise: 'Advanced' },
 
   // State & Architecture
-  { name: 'RxJS', slug: 'rxjs', category: 'state-arch', expertise: 'Expert Level' },
-  { name: 'Angular Signals', slug: 'angular', category: 'state-arch', expertise: 'Advanced' },
-  { name: 'Component Architecture', slug: 'angular', category: 'state-arch', expertise: 'Expert Level' },
-  { name: 'Scalable Patterns', slug: 'webpack', category: 'state-arch', expertise: 'Advanced' },
+  {
+    name: 'RxJS',
+    slug: 'rxjs',
+    category: 'state-arch',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'Angular Signals',
+    slug: 'angular',
+    category: 'state-arch',
+    expertise: 'Advanced',
+  },
+  {
+    name: 'Component Architecture',
+    slug: 'angular',
+    category: 'state-arch',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'Scalable Patterns',
+    slug: 'webpack',
+    category: 'state-arch',
+    expertise: 'Advanced',
+  },
 
   // Testing Excellence
-  { name: 'Cypress', slug: 'cypress', category: 'testing', expertise: 'Advanced' },
-  { name: 'Jasmine', slug: 'flask', category: 'testing', expertise: 'Advanced' },
+  {
+    name: 'Cypress',
+    slug: 'cypress',
+    category: 'testing',
+    expertise: 'Advanced',
+  },
+  {
+    name: 'Jasmine',
+    slug: 'flask',
+    category: 'testing',
+    expertise: 'Advanced',
+  },
   { name: 'Karma', slug: 'flask', category: 'testing', expertise: 'Advanced' },
-  { name: 'Vitest', slug: 'vitest', category: 'testing', expertise: 'Intermediate' },
+  {
+    name: 'Vitest',
+    slug: 'vitest',
+    category: 'testing',
+    expertise: 'Intermediate',
+  },
 
   // Backend & Tools
-  { name: 'Node.js', slug: 'nodejs', category: 'backend-tools', expertise: 'Advanced' },
-  { name: 'Express.js', slug: 'express', category: 'backend-tools', expertise: 'Intermediate' },
-  { name: 'MySQL', slug: 'mysql', category: 'backend-tools', expertise: 'Intermediate' },
-  { name: 'PostgreSQL', slug: 'postgresql', category: 'backend-tools', expertise: 'Intermediate' },
-  { name: 'Docker', slug: 'docker', category: 'backend-tools', expertise: 'Intermediate' },
-  { name: 'Kubernetes', slug: 'kubernetes', category: 'backend-tools', expertise: 'Beginner' },
-  { name: 'GitHub Actions', slug: 'githubactions', category: 'backend-tools', expertise: 'Intermediate' },
-  { name: 'Git & GitHub', slug: 'github', category: 'backend-tools', expertise: 'Expert Level' },
+  {
+    name: 'Node.js',
+    slug: 'nodejs',
+    category: 'backend-tools',
+    expertise: 'Advanced',
+  },
+  {
+    name: 'Express.js',
+    slug: 'express',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'MySQL',
+    slug: 'mysql',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'PostgreSQL',
+    slug: 'postgresql',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'Docker',
+    slug: 'docker',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'Kubernetes',
+    slug: 'kubernetes',
+    category: 'backend-tools',
+    expertise: 'Beginner',
+  },
+  {
+    name: 'GitHub Actions',
+    slug: 'githubactions',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'Git & GitHub',
+    slug: 'github',
+    category: 'backend-tools',
+    expertise: 'Expert Level',
+  },
 ];
 
 export const EXPERIENCES: Experience[] = [
@@ -176,7 +291,13 @@ export const PROJECTS: Project[] = [
     description:
       'Human Resource Management System with payroll, attendance, and employee management modules.',
     image: 'https://picsum.photos/seed/hrms/800/600',
-    techStack: ['Angular', 'TypeScript', 'Angular Material', 'RxJS', 'Security'],
+    techStack: [
+      'Angular',
+      'TypeScript',
+      'Angular Material',
+      'RxJS',
+      'Security',
+    ],
     role: 'UI Developer',
     challenge:
       'Building comprehensive HR modules with secure authentication and role-based access systems.',
@@ -240,8 +361,15 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: 'Meta',
     issueDate: '2025-01',
     credentialId: '2WVPML4AGGDA',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/records/2WVPM4LAGGDA',
-    skills: ['Front-End Framework', 'Web Design and Development', 'Responsive Web Design', 'HTML & CSS', 'Web Development Tools'],
+    credentialUrl:
+      'https://www.coursera.org/account/accomplishments/records/2WVPM4LAGGDA',
+    skills: [
+      'Front-End Framework',
+      'Web Design and Development',
+      'Responsive Web Design',
+      'HTML & CSS',
+      'Web Development Tools',
+    ],
     logo: 'https://skillicons.dev/icons?i=html',
   },
   {
@@ -249,8 +377,17 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: 'Meta',
     issueDate: '2025-09',
     credentialId: 'ZZELZ4MOKKZ9',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/ZZELZ4MOKKZ9',
-    skills: ['Object Oriented Programming (OOP)', 'Javascript', 'Node.JS', 'Express.JS', 'Programming Principles', 'Event-Driven Programming', 'JavaScript Testing Framework'],
+    credentialUrl:
+      'https://www.coursera.org/account/accomplishments/verify/ZZELZ4MOKKZ9',
+    skills: [
+      'Object Oriented Programming (OOP)',
+      'Javascript',
+      'Node.JS',
+      'Express.JS',
+      'Programming Principles',
+      'Event-Driven Programming',
+      'JavaScript Testing Framework',
+    ],
     logo: 'https://skillicons.dev/icons?i=js',
   },
   {
@@ -258,8 +395,18 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: 'Meta',
     issueDate: '2025-01',
     credentialId: 'A59WGAMBOHKH',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/A59WGAMBOHKH',
-    skills: ['React.js', 'UI Components', 'HTML', 'CSS', 'Data Management', 'Application Development', 'React Hooks', 'React Router'],
+    credentialUrl:
+      'https://www.coursera.org/account/accomplishments/verify/A59WGAMBOHKH',
+    skills: [
+      'React.js',
+      'UI Components',
+      'HTML',
+      'CSS',
+      'Data Management',
+      'Application Development',
+      'React Hooks',
+      'React Router',
+    ],
     logo: 'https://skillicons.dev/icons?i=react',
   },
   {
@@ -267,7 +414,8 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: 'Meta',
     issueDate: '2025-01',
     credentialId: 'UCS9112Y5NMB',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/UCS9112Y5NMB',
+    credentialUrl:
+      'https://www.coursera.org/account/accomplishments/verify/UCS9112Y5NMB',
     skills: [
       'React',
       'Material UI',
@@ -286,7 +434,8 @@ export const CERTIFICATIONS: Certification[] = [
     issuer: 'Atlassian',
     issueDate: '2025-01',
     credentialId: '9D028EFD1X4C',
-    credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/9D028EFD1X4C',
+    credentialUrl:
+      'https://www.coursera.org/account/accomplishments/verify/9D028EFD1X4C',
     skills: [
       'Atlassian Bamboo',
       'Confluence',
@@ -297,7 +446,7 @@ export const CERTIFICATIONS: Certification[] = [
       'Opsgenie',
       'Backlogs',
       'Sprint Retrospectives',
-      'Workflow Management'
+      'Workflow Management',
     ],
     logo: '',
   },
