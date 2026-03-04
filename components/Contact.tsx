@@ -43,9 +43,11 @@ const Contact: React.FC = () => {
 
         <div className="relative z-10 grid lg:grid-cols-2">
           <div className="p-12 md:p-20 text-white">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8">Let's build something <br /> extraordinary.</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8">Let’s work together.</h2>
             <p className="text-slate-400 text-lg mb-12 max-w-md">
-              Whether you have a specific project in mind or just want to chat about technical architecture, I'm always open to new opportunities.
+              I'm always interested in new opportunities where I can contribute,
+              grow, and build impactful software. Feel free to reach out if you
+              think I’d be a good fit for your team.
             </p>
 
             <div className="space-y-8">
@@ -119,8 +121,8 @@ const Contact: React.FC = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={`w-full py-5 rounded-2xl font-bold flex items-center justify-center gap-2 transition-all ${isSent
-                    ? 'bg-green-500 text-white'
-                    : 'bg-primary-600 hover:bg-primary-700 text-white active:scale-[0.98]'
+                  ? 'bg-green-500 text-white'
+                  : 'bg-primary-600 hover:bg-primary-700 text-white active:scale-[0.98]'
                   }`}
               >
                 {isSubmitting ? (

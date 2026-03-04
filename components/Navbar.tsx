@@ -29,6 +29,10 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
@@ -38,7 +42,7 @@ const Navbar: React.FC<NavbarProps> = ({ isDarkMode, toggleTheme }) => {
     >
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex justify-between items-center'>
-          <div className='flex items-center gap-2 group cursor-pointer'>
+          <div className='flex items-center gap-2 group cursor-pointer' onClick={scrollToTop} >
             <div className='bg-primary-600 p-1.5 rounded-lg text-white transform group-hover:rotate-12 transition-transform'>
               <Code2 size={24} />
             </div>

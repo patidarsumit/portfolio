@@ -24,7 +24,7 @@ Proven ability to deliver high-quality, maintainable UI solutions while reducing
   resumeUrl: '/portfolio/sumit-resume.pdf',
   portraitUrl: '/portfolio/sumit-patidar.jpg',
   contact: '7223893390',
-  location: 'Remote / Global',
+  location: 'Onsite / Remote',
 };
 
 export const EDUCATION: Education[] = [
@@ -201,7 +201,7 @@ export const EXPERIENCES: Experience[] = [
     company: 'VIT Infotech Pvt. Ltd.',
     role: 'Senior Software Engineer / Frontend Lead',
     duration: 'June 2019 – Present',
-    location: 'Bhopal / Remote',
+    location: 'Pune',
     description: [
       'Serving as a core frontend lead for multiple enterprise and product-based applications.',
       'Own UI architecture, driving migrations from legacy systems to modern Angular (17/18) with Signals.',
