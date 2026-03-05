@@ -9,7 +9,7 @@ import {
 
 export const PERSONAL_INFO = {
   name: 'Sumit Patidar',
-  title: 'Senior UI Engineer',
+  title: 'Senior Software Engineer',
   summary: `With 6.5+ years of experience building scalable enterprise web applications using Angular, React, and modern frontend technologies.
 
 Expertise in designing reusable component architectures, optimizing frontend performance, and modernizing enterprise user interfaces.
@@ -138,12 +138,12 @@ export const CORE_TECH: Technology[] = [
     expertise: 'Advanced',
   },
   { name: 'Karma', slug: 'flask', category: 'testing', expertise: 'Advanced' },
-  {
-    name: 'Vitest',
-    slug: 'vitest',
-    category: 'testing',
-    expertise: 'Intermediate',
-  },
+  // {
+  //   name: 'Vitest',
+  //   slug: 'vitest',
+  //   category: 'testing',
+  //   expertise: 'Intermediate',
+  // },
 
   // Backend & Tools
   {
@@ -176,12 +176,12 @@ export const CORE_TECH: Technology[] = [
     category: 'backend-tools',
     expertise: 'Intermediate',
   },
-  {
-    name: 'Kubernetes',
-    slug: 'kubernetes',
-    category: 'backend-tools',
-    expertise: 'Beginner',
-  },
+  // {
+  //   name: 'Kubernetes',
+  //   slug: 'kubernetes',
+  //   category: 'backend-tools',
+  //   expertise: 'Beginner',
+  // },
   {
     name: 'GitHub Actions',
     slug: 'githubactions',
