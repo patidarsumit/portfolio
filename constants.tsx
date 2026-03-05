@@ -21,7 +21,7 @@ Proven ability to deliver high-quality, maintainable UI solutions while reducing
   email: 'patidars110@gmail.com',
   linkedin: 'https://linkedin.com/in/sumit-patidar-774ba4152/',
   github: 'https://github.com/patidarsumit',
-  resumeUrl: '/portfolio/sumit-resume.pdf',
+  resumeUrl: '/portfolio/Sumit_Patidar_Resume.pdf',
   portraitUrl: '/portfolio/sumit-patidar.jpg',
   contact: '7223893390',
   location: 'Onsite / Remote',
