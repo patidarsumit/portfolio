@@ -45,7 +45,7 @@ const App: React.FC = () => {
         <ProjectGrid />
         <Certifications />
         <Education />
-        {/* <Achievements /> */}
+        <Achievements />
         <Contact />
       </main>
 

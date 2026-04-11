@@ -45,7 +45,7 @@ const Skills: React.FC = () => {
     { id: 'frontend', title: 'Modern Frontend', description: 'Deep expertise in Angular, React, Next.js, and modern web technologies.' },
     { id: 'state-arch', title: 'Architecture & State', description: 'Reactive programming with RxJS and Angular Signals.' },
     { id: 'testing', title: 'Testing Excellence', description: 'Ensuring stability with , Cypress, Jasmine & Karma.' },
-    { id: 'backend-tools', title: 'Backend & DevOps', description: 'Node.js, Express, databases, Docker, Kubernetes, and CI/CD.' }
+    { id: 'backend-tools', title: 'Backend & DevOps', description: 'Node.js, Express, databases, Docker, and CI/CD.' }
   ];
 
   const allSkillsList = CORE_TECH.map(t => t.name).join(', ');

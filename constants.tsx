@@ -10,13 +10,13 @@ import {
 export const PERSONAL_INFO = {
   name: 'Sumit Patidar',
   title: 'Senior Software Engineer',
-  summary: `With 6.5+ years of experience building scalable enterprise web applications using Angular, React, and modern frontend technologies.
+  summary: `With 6.5+ years of expertise building high-performance, scalable enterprise web applications using Angular (v9–v21), React, and Next.js.
 
-Expertise in designing reusable component architectures, optimizing frontend performance, and modernizing enterprise user interfaces.
+Improved application performance by 30%, achieved 90%+ unit-test coverage, and reduced regression defects by 40% through Cypress E2E automation. Specialist in Angular 21 Signals, Deferrable Views, micro frontend architecture (Module Federation), and WCAG 2.1 accessibility.
 
-Strong experience working in Agile environments, collaborating with cross-functional teams, and contributing through code reviews, testing, and CI/CD practices.
+Strong experience in Agile environments, collaborating with cross-functional teams, and contributing through architecture decisions, code reviews, and CI/CD pipelines.
 
-Proven ability to deliver high-quality, maintainable UI solutions while reducing regression issues through automation and strong engineering best practices.`,
+Proven ability to lead and mentor engineering teams while delivering maintainable, high-quality UI solutions at enterprise scale.`,
   yearsOfExperience: 6.5,
   email: 'patidars110@gmail.com',
   linkedin: 'https://linkedin.com/in/sumit-patidar-774ba4152/',
@@ -24,7 +24,7 @@ Proven ability to deliver high-quality, maintainable UI solutions while reducing
   resumeUrl: '/portfolio/Sumit_Patidar_Resume.pdf',
   portraitUrl: '/portfolio/sumit-patidar.jpg',
   contact: '7223893390',
-  location: 'Onsite / Remote',
+  location: 'Pune, India',
 };
 
 export const EDUCATION: Education[] = [
@@ -54,12 +54,17 @@ export const EDUCATION: Education[] = [
 export const CORE_TECH: Technology[] = [
   // Frontend
   {
-    name: 'Angular',
+    name: 'Angular (v9–v21)',
     slug: 'angular',
     category: 'frontend',
     expertise: 'Expert Level',
   },
-  { name: 'React', slug: 'react', category: 'frontend', expertise: 'Advanced' },
+  {
+    name: 'React',
+    slug: 'react',
+    category: 'frontend',
+    expertise: 'Advanced',
+  },
   {
     name: 'Next.js',
     slug: 'nextjs',
@@ -96,12 +101,29 @@ export const CORE_TECH: Technology[] = [
     category: 'frontend',
     expertise: 'Advanced',
   },
-  { name: 'SCSS', slug: 'sass', category: 'frontend', expertise: 'Advanced' },
+  {
+    name: 'SCSS',
+    slug: 'sass',
+    category: 'frontend',
+    expertise: 'Advanced',
+  },
+  {
+    name: 'Bootstrap',
+    slug: 'bootstrap',
+    category: 'frontend',
+    expertise: 'Advanced',
+  },
 
   // State & Architecture
   {
     name: 'RxJS',
     slug: 'rxjs',
+    category: 'state-arch',
+    expertise: 'Expert Level',
+  },
+  {
+    name: 'NgRx',
+    slug: 'angular',
     category: 'state-arch',
     expertise: 'Expert Level',
   },
@@ -112,21 +134,33 @@ export const CORE_TECH: Technology[] = [
     expertise: 'Advanced',
   },
   {
+    name: 'Deferrable Views (@defer)',
+    slug: 'angular',
+    category: 'state-arch',
+    expertise: 'Advanced',
+  },
+  {
+    name: 'Micro Frontend (Module Federation)',
+    slug: 'webpack',
+    category: 'state-arch',
+    expertise: 'Advanced',
+  },
+  {
     name: 'Component Architecture',
     slug: 'angular',
     category: 'state-arch',
     expertise: 'Expert Level',
   },
   {
-    name: 'Scalable Patterns',
-    slug: 'webpack',
+    name: 'WCAG 2.1 Accessibility',
+    slug: 'html',
     category: 'state-arch',
     expertise: 'Advanced',
   },
 
   // Testing Excellence
   {
-    name: 'Cypress',
+    name: 'Cypress (E2E)',
     slug: 'cypress',
     category: 'testing',
     expertise: 'Advanced',
@@ -137,13 +171,12 @@ export const CORE_TECH: Technology[] = [
     category: 'testing',
     expertise: 'Advanced',
   },
-  { name: 'Karma', slug: 'flask', category: 'testing', expertise: 'Advanced' },
-  // {
-  //   name: 'Vitest',
-  //   slug: 'vitest',
-  //   category: 'testing',
-  //   expertise: 'Intermediate',
-  // },
+  {
+    name: 'Karma',
+    slug: 'flask',
+    category: 'testing',
+    expertise: 'Advanced',
+  },
 
   // Backend & Tools
   {
@@ -157,6 +190,12 @@ export const CORE_TECH: Technology[] = [
     slug: 'express',
     category: 'backend-tools',
     expertise: 'Intermediate',
+  },
+  {
+    name: 'REST APIs',
+    slug: 'nodejs',
+    category: 'backend-tools',
+    expertise: 'Expert Level',
   },
   {
     name: 'MySQL',
@@ -176,15 +215,21 @@ export const CORE_TECH: Technology[] = [
     category: 'backend-tools',
     expertise: 'Intermediate',
   },
-  // {
-  //   name: 'Kubernetes',
-  //   slug: 'kubernetes',
-  //   category: 'backend-tools',
-  //   expertise: 'Beginner',
-  // },
   {
     name: 'GitHub Actions',
     slug: 'githubactions',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'GitLab CI/CD',
+    slug: 'github',
+    category: 'backend-tools',
+    expertise: 'Intermediate',
+  },
+  {
+    name: 'AWS',
+    slug: 'github',
     category: 'backend-tools',
     expertise: 'Intermediate',
   },
@@ -193,6 +238,12 @@ export const CORE_TECH: Technology[] = [
     slug: 'github',
     category: 'backend-tools',
     expertise: 'Expert Level',
+  },
+  {
+    name: 'GitHub Copilot',
+    slug: 'github',
+    category: 'backend-tools',
+    expertise: 'Advanced',
   },
 ];
 
@@ -203,12 +254,16 @@ export const EXPERIENCES: Experience[] = [
     duration: 'June 2019 – Present',
     location: 'Pune',
     description: [
-      'Serving as a core frontend lead for multiple enterprise and product-based applications.',
-      'Own UI architecture, driving migrations from legacy systems to modern Angular (17/18) with Signals.',
-      'Mentor junior and mid-level developers, enforcing strict code quality and maintainable standards.',
-      'Drive performance optimizations that significantly improved Lighthouse scores for enterprise dashboards.',
+      'Led frontend architecture for 10+ enterprise and product applications, owning end-to-end UI design and delivery across multiple concurrent product streams.',
+      'Improved application performance by 30% through lazy loading, OnPush change detection, virtual scrolling, and Webpack bundle optimization — improving Core Web Vitals scores.',
+      'Elevated unit test coverage from ~40% to 90%+ using Karma/Jasmine and introduced Cypress E2E automation, reducing regression defects by 40% across release cycles.',
+      'Designed and enforced scalable micro frontend architecture using Module Federation, enabling independent team deployments and reducing inter-team merge conflicts by 60%.',
+      'Adopted Angular 21 latest features including Signals, Deferrable Views (@defer), and new Control Flow syntax (@if/@for) — improving rendering performance and code maintainability.',
+      'Implemented WCAG 2.1 accessibility standards across UI components including semantic HTML, ARIA roles, keyboard navigation, and colour contrast compliance.',
+      'Established CI/CD pipelines via GitHub Actions and GitLab CI with AWS deployments — reduced deployment time by 35% and enabled zero-downtime releases.',
+      'Mentored 4 junior engineers through structured code reviews and architecture sessions — two promoted to mid-level within 18 months.',
     ],
-    technologies: ['Angular', 'React', 'Next.js', 'RxJS', 'Tailwind'],
+    technologies: ['Angular', 'React', 'Next.js', 'RxJS', 'NgRx', 'Tailwind', 'Cypress', 'AWS'],
   },
 ];
 
@@ -217,131 +272,129 @@ export const PROJECTS: Project[] = [
     id: 'stayntouch',
     title: 'STAYNTOUCH (PMS)',
     description:
-      'Hotel Property Management System with comprehensive booking, rate configuration, add-ons and pricing modules used by hotel operations.',
+      'Hotel Property Management System with comprehensive booking, rate configuration, add-ons and pricing modules used by hotel operations across 50+ properties.',
     image: 'https://picsum.photos/seed/pms/800/600',
     techStack: ['Angular', 'React', 'Ruby', 'RxJS', 'Less'],
-    role: 'Senior Frontend developer',
+    role: 'Senior Frontend Developer',
     challenge:
-      'Developed various features for PMS, Chain, Kiosk and Mobility applications with complex validation workflows.',
+      'Handling high-concurrency real-time data updates across booking, pricing and configuration modules with complex validation workflows and dynamic configuration systems.',
     solution:
-      'Implemented dynamic configuration systems and optimized UI rendering for improved application stability.',
+      'Optimized UI rendering for zero visible lag under load, improved Lighthouse score from 58 to 87, and reduced operator error rates by 35% through smart form state management.',
     category: 'enterprise',
-    period: 'Jan 2022 - Present',
+    period: 'Jan 2022 – Present',
     isCurrent: true,
   },
   {
     id: 'ib-x',
-    title: 'IB-X',
+    title: 'IB-X – AI Workflow & RPA Platform',
     description:
-      'AI-Based Workflow & RPA Platform for creating AI-driven RPA and BPA agents with visual workflow orchestration.',
+      'AI-Based Workflow & RPA Platform for creating AI-driven RPA and BPA agents with visual workflow orchestration for non-technical users.',
     image: 'https://picsum.photos/seed/ibx-ai/800/600',
-    techStack: ['Angular', 'AntV', 'TypeScript', 'RxJS'],
-    role: 'Senior Frontend developer',
+    techStack: ['Angular', 'AntV G6', 'TypeScript', 'RxJS'],
+    role: 'Senior Frontend Developer',
     challenge:
-      'Building dynamic graph-based workflow builder with node-based visualization for complex automation.',
+      'Building a dynamic graph-based workflow builder supporting 50+ node types with real-time edge validation and complex automation orchestration.',
     solution:
-      'Built interactive drag-and-drop node configuration interfaces and designed scalable UI modules for automation orchestration and agent management.',
+      'Built interactive drag-and-drop node configuration interfaces using AntV G6 and designed scalable, composable UI modules for automation orchestration and agent management.',
     category: 'ai-integration',
+    period: 'Jul 2025 – Present',
+    isCurrent: true,
   },
   {
     id: 'ib-billing',
     title: 'IB-Billing',
     description:
-      'Internal Enterprise Billing System with comprehensive financial workflow modules and invoice management.',
+      'Internal Enterprise Billing System with comprehensive financial workflow modules, invoice management, and large-scale reporting.',
     image: 'https://picsum.photos/seed/billing/800/600',
     techStack: ['Angular', 'TypeScript', 'SCSS', 'REST APIs'],
     role: 'Frontend Architect & Lead Developer',
     challenge:
-      'Handling large financial data sets with secure and data-driven UI components.',
+      'Handling large financial data sets with secure, performant, and data-driven UI components for high-volume invoice and billing operations.',
     solution:
-      'Built optimized reporting modules with performance-focused rendering for large-scale financial data.',
+      'Built optimized reporting modules with performance-focused rendering, reducing data load times significantly for large-scale financial data views.',
     category: 'internal-tool',
   },
   {
     id: 'cwc',
     title: 'Central Warehousing Corporation (CWC)',
     description:
-      'Enterprise Management Platform for Central Warehousing Corporation, enabling project creation, multi-level approval workflows, feedback collection, and comprehensive report management.',
+      'Enterprise Management Platform for Central Warehousing Corporation — internal employee management with multi-level approval workflows, training modules, feedback collection, and report management.',
     image: 'https://cewacor.nic.in/images/logo.png',
     techStack: ['Angular', 'TypeScript', 'RxJS', 'REST APIs'],
     role: 'Frontend Architect & Lead Developer',
     challenge:
-      'Designing robust approval workflows, feedback modules, and scalable reporting for large-scale management operations.',
+      'Designing robust multi-level approval workflows, employee training modules, and feedback systems with role-based access across 8 user roles for large-scale government operations.',
     solution:
-      'Implemented multi-level project approval, integrated feedback and reporting systems, and optimized UI for high-volume management tasks.',
+      'Implemented secure RBAC, integrated training and feedback modules, and optimized UI for high-volume management tasks — achieving zero unauthorized access incidents post-launch.',
     category: 'internal-tool',
+    period: 'Feb 2021 – Dec 2022',
   },
   {
     id: 'fitpact',
     title: 'Fitpact',
     description:
-      'Health & Fitness Application with complete migration from AngularJS to modern Angular framework.',
+      'Health & Fitness Application — complete migration from legacy AngularJS to modern Angular framework, modernising the entire codebase while maintaining feature parity.',
     image: 'https://picsum.photos/seed/fitpact/800/600',
-    techStack: ['Angular', 'TypeScript', 'Migration'],
+    techStack: ['Angular', 'TypeScript', 'Migration', 'RxJS'],
     role: 'Migration Lead',
     challenge:
-      'Complete migration of entire project from legacy AngularJS to modern Angular with updated dependencies.',
+      'Migrating an entire production AngularJS application to modern Angular with updated dependencies, new patterns, and zero feature regression — while keeping the app live.',
     solution:
-      'Systematically migrated components, services, and dependencies while maintaining feature parity and improving performance.',
+      'Systematically migrated components, services, and routing using a hybrid migration strategy, improving performance and maintainability while ensuring full feature parity.',
     category: 'product',
   },
   {
     id: 'hrms',
     title: 'HRMS',
     description:
-      'Human Resource Management System with payroll, attendance, and employee management modules.',
+      'Human Resource Management System with payroll, attendance, and employee management modules — processing payroll for 200+ employees with 99.9% accuracy.',
     image: 'https://picsum.photos/seed/hrms/800/600',
-    techStack: [
-      'Angular',
-      'TypeScript',
-      'Angular Material',
-      'RxJS',
-      'Security',
-    ],
+    techStack: ['Angular', 'TypeScript', 'Angular Material', 'RxJS', 'Security'],
     role: 'UI Developer',
     challenge:
-      'Building comprehensive HR modules with secure authentication and role-based access systems.',
+      'Building comprehensive HR modules with secure authentication, role-based access, and accurate payroll processing for a large employee base.',
     solution:
-      'Implemented secure authentication workflows and optimized performance for employee data management.',
+      'Implemented JWT-based authentication, granular RBAC, and optimized data management — achieving zero security incidents in production over 2 years.',
     category: 'internal-tool',
+    period: 'Aug 2019 – Jan 2021',
   },
   {
     id: 'leadout',
     title: 'LeadOut',
     description:
-      'SaaS Platform with workflow-driven UI modules and enterprise-grade scalability.',
+      'SaaS Platform with workflow-driven UI modules and enterprise-grade scalability for lead and pipeline management.',
     image: 'https://picsum.photos/seed/leadout/800/600',
-    techStack: ['REACT', 'TypeScript', 'State Management'],
+    techStack: ['React', 'TypeScript', 'Redux', 'REST APIs'],
     role: 'UI Developer',
     challenge:
-      'Building workflow-driven UI modules with scalable state management logic.',
+      'Building workflow-driven UI modules with scalable state management logic for a fast-growing SaaS platform.',
     solution:
-      'Developed standardized UI components and robust state management patterns for rapid feature development.',
+      'Developed standardised reusable UI components and robust Redux state management patterns, enabling rapid and consistent feature development.',
     category: 'enterprise',
   },
 ];
 
 export const ACHIEVEMENTS: Achievement[] = [
   {
-    title: 'Frontend Lead Status',
+    title: 'System Architecture & Scalability',
     description:
-      'Promoted to lead roles for multiple concurrent product streams based on architectural excellence.',
-    date: '2022',
-    icon: 'Users',
+      'Designed and implemented a modular architecture enabling independent deployments and better separation of concerns — reduced cross-team dependencies and improved system scalability.',
+    date: '2023–Present',
+    icon: 'Layout',
   },
   {
-    title: 'Engineering Honor',
+    title: 'Performance & Efficiency Improvements',
     description:
-      'Academic excellence with an 84% score in Bachelor of Engineering from RGPV.',
-    date: '2019',
-    icon: 'Award',
-  },
-  {
-    title: 'Architecture Ownership',
-    description:
-      'Directly responsible for the UI architecture of 10+ major products at VIT Infotech.',
-    date: 'Active',
+      'Optimized application performance and resource usage — achieved 30%+ improvement in load times and significantly enhanced overall system responsiveness.',
+    date: '2023',
     icon: 'Zap',
+  },
+  {
+    title: 'Quality & Automation',
+    description:
+      'Established automated testing and quality practices — increased test coverage from 40% to 90%+, reducing production issues and improving release stability.',
+    date: '2021',
+    icon: 'Award',
   },
 ];
 
@@ -403,7 +456,6 @@ export const CERTIFICATIONS: Certification[] = [
       'HTML',
       'CSS',
       'Data Management',
-      'Application Development',
       'React Hooks',
       'React Router',
     ],
@@ -425,7 +477,6 @@ export const CERTIFICATIONS: Certification[] = [
       'Software Design Patterns',
       'Unit Testing',
       'Context Management',
-      'Category: Application Programming Interface (API)',
     ],
     logo: 'https://skillicons.dev/icons?i=react',
   },
@@ -437,17 +488,14 @@ export const CERTIFICATIONS: Certification[] = [
     credentialUrl:
       'https://www.coursera.org/account/accomplishments/verify/9D028EFD1X4C',
     skills: [
-      'Atlassian Bamboo',
-      'Confluence',
-      'Jira',
       'Agile Project Management',
       'Scrum',
       'Kanban',
-      'Opsgenie',
-      'Backlogs',
-      'Sprint Retrospectives',
+      'Jira',
+      'Confluence',
+      'Sprint Planning',
       'Workflow Management',
     ],
-    logo: '',
+    logo: 'https://skillicons.dev/icons?i=js',
   },
 ];

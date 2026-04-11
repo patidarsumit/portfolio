@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className='pt-28 pb-20 md:pt-36 md:pb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16'
+      className='pt-28 pb-20 md:pt-30 md:pb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16'
       aria-label='Introduction'
     >
       <div className='flex-1 space-y-6 md:space-y-8 text-center md:text-left z-10'>
