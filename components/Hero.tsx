@@ -8,7 +8,8 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className='pt-28 pb-20 md:pt-30 md:pb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16'
+      id='hero'
+      className='pt-28 pb-20 md:pt-32 md:pb-20 flex flex-col-reverse md:flex-row items-center gap-10 md:gap-16'
       aria-label='Introduction'
     >
       <div className='flex-1 space-y-6 md:space-y-8 text-center md:text-left z-10'>
@@ -28,7 +29,7 @@ const Hero: React.FC = () => {
           aria-hidden='true'
         >
           <span className='flex h-2 w-2 rounded-full bg-primary-600 animate-pulse'></span>
-          Available for Senior Software Engineer roles
+          {PERSONAL_INFO.availability}
         </div>
 
         <h1 className='text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight'>
@@ -43,7 +44,11 @@ const Hero: React.FC = () => {
           </span>
         </h1>
 
-        <div className='text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto md:mx-0 leading-relaxed space-y-4 text-left'>
+        <p className='text-sm sm:text-base font-semibold text-primary-700 dark:text-primary-300 max-w-2xl mx-auto md:mx-0 leading-relaxed text-left'>
+          {PERSONAL_INFO.tagline}
+        </p>
+
+        <div className='text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto md:mx-0 leading-relaxed space-y-4 text-left'>
           {PERSONAL_INFO.summary
             .split('\n')
             .map(

@@ -4,6 +4,8 @@ import { ExternalLink, Award } from 'lucide-react';
 import { CERTIFICATIONS } from '../constants';
 
 const Certifications: React.FC = () => {
+  const completedCertifications = CERTIFICATIONS.filter(cert => !cert.inProgress);
+
   return (
     <section id="certifications" className="py-24 border-t border-slate-200 dark:border-slate-800">
       <div className="flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
@@ -17,7 +19,7 @@ const Certifications: React.FC = () => {
           <Award size={32} />
           <div>
             <div className="text-xs font-bold uppercase tracking-widest opacity-80">Certifications</div>
-            <div className="text-xl font-bold">{CERTIFICATIONS.length - 1} Total</div>
+            <div className="text-xl font-bold">{completedCertifications.length} Total</div>
           </div>
         </div>
       </div>

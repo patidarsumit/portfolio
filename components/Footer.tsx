@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               © {new Date().getFullYear()} {PERSONAL_INFO.name}. Designed for impact.
             </p>
             <p className="text-[10px] text-slate-400 dark:text-slate-600 uppercase tracking-widest mt-1">
-              Built with React • Tailwind • Framer • Passion
+              Built with React, TypeScript, Tailwind CSS, and Vite
             </p>
           </div>
 

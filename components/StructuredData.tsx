@@ -8,8 +8,9 @@ const StructuredData: React.FC = () => {
     "@type": "Person",
     "name": PERSONAL_INFO.name,
     "jobTitle": PERSONAL_INFO.title,
-    "url": window.location.origin,
+    "url": PERSONAL_INFO.portfolioUrl,
     "sameAs": [
+      PERSONAL_INFO.portfolioUrl,
       PERSONAL_INFO.linkedin,
       PERSONAL_INFO.github
     ],

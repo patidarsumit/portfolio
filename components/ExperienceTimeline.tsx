@@ -37,6 +37,19 @@ const ExperienceTimeline: React.FC = () => {
                     <time>{exp.duration}</time>
                   </div>
                 </div>
+
+                {exp.highlights && exp.highlights.length > 0 && (
+                  <div className="grid gap-3 mb-8" aria-label="Key impact highlights">
+                    {exp.highlights.map((highlight) => (
+                      <div
+                        key={highlight}
+                        className="rounded-2xl bg-primary-50 dark:bg-slate-800/90 border border-primary-100 dark:border-primary-500/40 border-l-4 border-l-primary-500 px-4 py-3 text-xs font-semibold leading-relaxed text-primary-800 dark:text-slate-100 shadow-sm dark:shadow-primary-950/20"
+                      >
+                        {highlight}
+                      </div>
+                    ))}
+                  </div>
+                )}
                 
                 <ul className="space-y-4 mb-8" itemProp="description">
                   {exp.description.map((item, i) => (

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Github, ExternalLink, ArrowRight, Building2, Workflow, Receipt, Activity, Users, Layers } from 'lucide-react';
+import { Github, ExternalLink, Building2, Workflow, Receipt, Activity, Users, Layers, CheckCircle2 } from 'lucide-react';
 import { PROJECTS } from '../constants';
 import { Project } from '../types';
 
@@ -44,7 +44,7 @@ const ProjectGrid: React.FC = () => {
     <section id="projects" className="py-24">
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-10 mb-20">
         <div>
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight text-slate-900 dark:text-white">Featured Case Studies</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight text-slate-900 dark:text-white">Featured Projects</h2>
           <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-lg leading-relaxed">
             High-impact applications delivered for enterprise clients and product-based platforms.
           </p>
@@ -124,6 +124,17 @@ const ProjectGrid: React.FC = () => {
               <p className="text-slate-600 dark:text-slate-400 text-sm mb-8 leading-relaxed line-clamp-3">
                 {project.description}
               </p>
+
+              {project.metrics && project.metrics.length > 0 && (
+                <ul className="space-y-2 mb-8" aria-label={`${project.title} impact metrics`}>
+                  {project.metrics.map((metric) => (
+                    <li key={metric} className="flex items-start gap-2 text-xs font-semibold leading-relaxed text-slate-600 dark:text-slate-300">
+                      <CheckCircle2 size={14} className="mt-0.5 shrink-0 text-primary-600 dark:text-primary-400" />
+                      <span>{metric}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
               
               <div className="flex flex-wrap gap-2 mb-10 mt-auto">
                 {project.techStack.map((tech) => (

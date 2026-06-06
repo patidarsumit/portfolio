@@ -13,14 +13,14 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     emailjs.send(
-      'service_phms7bk', // replace with your EmailJS service ID
-      'template_b2nyfmh', // replace with your EmailJS template ID
+      'service_phms7bk',
+      'template_b2nyfmh',
       {
         name: formData.name,
         email: formData.email,
         message: formData.message,
       },
-      'rq-1zFRah-lM8rXEF' // replace with your EmailJS public key (user ID)
+      'rq-1zFRah-lM8rXEF'
     )
       .then(() => {
         setIsSubmitting(false);
@@ -57,7 +57,9 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-slate-500 uppercase tracking-widest">Email Me</div>
-                  <div className="text-lg font-medium">{PERSONAL_INFO.email}</div>
+                  <a href={`mailto:${PERSONAL_INFO.email}`} className="text-lg font-medium hover:text-primary-300 transition-colors">
+                    {PERSONAL_INFO.email}
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-6">
@@ -66,7 +68,9 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <div className="text-sm font-semibold text-slate-500 uppercase tracking-widest">Contact</div>
-                  <div className="text-lg font-medium">{PERSONAL_INFO.contact}</div>
+                  <a href={`tel:${PERSONAL_INFO.contact.replace(/\s/g, '')}`} className="text-lg font-medium hover:text-primary-300 transition-colors">
+                    {PERSONAL_INFO.contact}
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-6">

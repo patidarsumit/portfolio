@@ -11,6 +11,7 @@ export interface Experience {
   role: string;
   duration: string;
   location: string;
+  highlights?: string[];
   description: string[];
   technologies: string[];
 }
@@ -24,6 +25,7 @@ export interface Project {
   role: string;
   challenge: string;
   solution: string;
+  metrics?: string[];
   githubUrl?: string;
   liveUrl?: string;
   category: 'enterprise' | 'product' | 'ai-integration' | 'internal-tool';

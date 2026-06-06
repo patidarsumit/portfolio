@@ -1,14 +1,9 @@
 
 import React from 'react';
-import { PERSONAL_INFO } from '../constants';
+import { KEY_METRICS } from '../constants';
 
 const About: React.FC = () => {
-  const stats = [
-    { label: 'Years of Experience', value: '6.5+' },
-    { label: 'Projects Delivered', value: '5+' },
-    { label: 'Projects Led', value: '3+' },
-    { label: 'Tech Stack (Angular, React, Next.js)', value: '3+' },
-  ];
+  const stats = KEY_METRICS.slice(0, 4);
 
   return (
     <section id="about" className="py-24 border-t border-slate-200 dark:border-slate-800">
@@ -21,10 +16,10 @@ const About: React.FC = () => {
             </h2>
             <div className="space-y-6 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
               <p>
-                As a <strong>Senior Software Engineer</strong> at <strong>VIT Infotech</strong>, I have spent the last 6.5 years specializing in the art of building scalable UI systems. My focus is on creating maintainable, high-performance web applications that provide real business value.
+                As a <strong>Senior Software Engineer</strong> at <strong>VIT Infotech</strong>, I have spent the last 7 years building scalable Angular applications for enterprise teams across hospitality, government, HR, billing, and SaaS platforms.
               </p>
               <p>
-                I thrive in <strong>Frontend Leadership</strong> roles where I can architect clean UI systems using <strong>Angular, React, and Next.js</strong>. My technical philosophy is simple: write code that is as easy to read as it is efficient to execute.
+                I focus on <strong>frontend architecture, performance, accessibility, testing, and mentoring</strong>. My technical philosophy is simple: ship UI systems that are easy to understand, fast to use, and reliable under real production pressure.
               </p>
             </div>
           </div>
